@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Возисов](https://up.htmlacademy.ru/adaptive/20/user/1465357).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://up.htmlacademy.ru/htmlcss/28/user/241239).
 
 ---
 
