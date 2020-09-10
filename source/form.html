@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img src="#" width="186" height="96" alt="Логотип Седоны">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="main-image">
+      <img src="" class="main-image__sign" width="229" height="39" alt="Подпись Седоны">
+    </div>
+    <section class="intro">
+      <h2 class="intro__title">Отсавьте свой отзыв</h2>
+      <p class="intro__text">Помогите нашим отелям стать лучше!<br>
+        Оставьте отзыв о них, а также о<br>
+        посещенных вами<br>
+        достопримечательностях
+      </p>
+    </section>
+    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Представьтесь:</legend>
+        <label class="form__label-fcs"> Имя*:
+          <input class="form__input-fcs" type="text" name="first-name" placeholder="Петр">
+        </label>
+        <label class="form__label-fcs"> Фамилия*:
+          <input class="form__input-fcs" type="text" name="second-name" placeholder="Иванов">
+        </label>
+        <label class="form__label-fcs"> Отчество*:
+          <input class="form__input-fcs" type="text" name="patronymic" placeholder="Александрович">
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Контактная информация:</legend>
+        <label class="form__label-contacts"> Контактный телефон*:
+          <input class="form__input-contacts" type="tel" name="phone" placeholder="Введите телефон">
+        </label>
+        <label class="form__label-contacts">Электронная почта*:
+          <input class="form__input-contacts" type="email" name="e-mail" placeholder="Введите e-mail">
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Ваше общее впечатление</legend>
+        <label class="form__label-impression">
+          <input class="form__input-impression" type="radio" name="impression" value="Скорее положительное" checked>
+          Скорее положительное
+        </label>
+        <label class="form__label-impression">
+          <input class="form__input-impression" type="radio" name="impression" value="Скорее отрицательное">
+          Скорее отрицательное
+        </label>
+        <label class="form__label-impression">
+          <input class="form__input-impression" type="radio" name="impression" value="Затрудняюсь ответить">
+          Затрудняюсь ответить
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Посещенные достопримечательности</legend>
+        <label class="form__label-sightseeing">
+          <input class="form__input-sightseeing" type="checkbox" name="Diablo's-Bridge" checked>
+          Мост дьявола
+        </label>
+        <label class="form__label-sightseeing">
+          <input class="form__input-sightseeing" type="checkbox" name="Mountain-Bell" checked>
+          Гора-Колокол
+        </label>
+        <label class="form__label-sightseeing">
+          <input class="form__input-sightseeing" type="checkbox" name="Slide-Park" checked>
+          Слайд-парк
+        </label>
+        <label>
+          <input class="form__input-sightseeing" type="checkbox" name="Red-Rocks">
+          Красные скалы
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Опишите свои эмоции:</legend>
+        <textarea class="form__textarea-comment" name="comment" rows="5">Опишите подробно все свои восторги</textarea>
+      </fieldset>
+      <input class="form-button button" type="submit" value="Отправить отзыв">
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__hashtag">
+      <p>#visitsedona</p>
+    </div>
+    <div class="page-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span>Твиттер</span>
+            <img src="#" width="18" height="15" alt="Иконка Твиттера">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span>Фейсбук</span>
+            <img src="#" width="9" height="19" alt="Иконка Фейсбука">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span>Ютуб</span>
+            <img src="#" width="20" height="14" alt="Иконка Ютуба">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/">
+        <img src="" width="27" height="34" alt="Лого HTML Academy">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
